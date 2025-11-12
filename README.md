@@ -130,7 +130,7 @@ RLID-NET/
 
 ---
 
-## ⚙️ System Configuration Status
+## System Configuration Status
 
 ### 1. Current Configuration (`src/utils/config.py`)
 ```python
