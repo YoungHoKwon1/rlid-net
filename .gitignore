@@ -1,0 +1,18 @@
+# Python cache files
+**/__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Results folder
+results/
+results_2/
+results_old/
+data_analysis/
+
+# Documents folder
+docs/
+
+# input files folder
+inp_file/
+
