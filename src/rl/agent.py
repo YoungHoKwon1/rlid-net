@@ -51,7 +51,7 @@ class DQN(nn.Module):
         Initialize DQN
         
         Args:
-            input_size: State space size (5 dimensions)
+            input_size: State space size (10 dimensions)
             hidden_sizes: List of hidden layer sizes [64, 32, 16]
             output_size: Action space size (48 actions)
             dropout_rate: Dropout rate for regularization
