@@ -231,7 +231,7 @@ Test Results Summary:
 Overall: 5/5 tests passed
 ```
 
-### 3. Key Performance Metrics (as of August 2024)
+### 3. Key Performance Metrics (as of August 2025)
 **Baseline Performance:**
 - Baseline runoff: 676.20 m³ (36-hour simulation)
 - Peak runoff: 0.142 m³/s
