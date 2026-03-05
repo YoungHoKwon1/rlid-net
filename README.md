@@ -298,7 +298,7 @@ python -c "from src.utils.config import validate_action_space; validate_action_s
 ## Development History
 
 ### Version History
-- **v2.4** (November 2025): Cloud deployment implementation
+
 - **v2.3** (October 2025): Simulation results analysis
 - **v2.2** (August 2025): Added clipping to prevent loss divergence
 - **v2.1** (July 2025): SWMM constraint implementation for LID installation
