@@ -1,3 +1,0 @@
-# RLID-NET API Application
-
-

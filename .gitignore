@@ -10,6 +10,7 @@ results_2/
 results_old/
 data_analysis/
 episode_analysis/
+learning_animation/
 
 # Documents folder
 docs/
@@ -19,3 +20,7 @@ inp_file/
 
 # reference code folder
 reference_code/
+
+# additional project folder
+api_app/
+lid_equation/
