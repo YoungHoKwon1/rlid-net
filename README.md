@@ -27,8 +27,8 @@ RLID-NET/
 │   │   ├── config.py          # System configuration
 │   │   └── visualization.py   # Result visualization
 │   └── __init__.py
-├── inp_file/                   # SWMM input files
-├── results/                    # results
+├── example_inp/                   # Exampe SWMM input files
+├── example_results/               # Example results
 ├── main.py                     # main
 ├── run_batch_training.py       # Batch training
 └── test_system.py             # System test
