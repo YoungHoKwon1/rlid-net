@@ -24,3 +24,7 @@ reference_code/
 # additional project folder
 api_app/
 lid_equation/
+
+*.path
+*.log
+*/temp_simulation/
