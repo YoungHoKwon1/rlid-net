@@ -9,6 +9,7 @@ results/
 results_2/
 results_old/
 data_analysis/
+episode_analysis/
 
 # Documents folder
 docs/
@@ -16,3 +17,5 @@ docs/
 # input files folder
 inp_file/
 
+# reference code folder
+reference_code/

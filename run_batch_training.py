@@ -89,7 +89,8 @@ def main():
 
     # (800, 50, 0.90, 0.10, "w9010_seed0_8lids_newcosts_643216_seocho"),
     # (800, 50, 1.00, 0.00, "w1000_seed1_8lids_newcosts_643216_seocho"),
-    (800, 50, 0.50, 0.50, "w5050_seed0_8lids_3.3737_643216_seocho2subc4_2022full"),    
+    (800, 50, 0.50, 0.50, "w5050_seed0_8lids_3.3737_643216_seocho2subc4_10yr"), 
+    # (800, 50, 0.50, 0.50, "w5050_seed0_8lids_3.3737_643216_seocho2subc4_2022full"), 
     # (800, 50, 0.00, 1.00, "w0100_seed0_8lids_3.3737_643216_seocho_2022"),    
     # (800, 50, 0.00, 1.0, "w0100_seed0_8lids_newcosts_643216"),
     # (800, 50, 0.00, 1.0, "w0100_seed1_8lids_newcosts_643216"),

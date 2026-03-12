@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # FastAPI 서버
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://rlidnet:password@db:5432/rlidnet
+      - REDIS_URL=redis://redis:6379/0
+      - S3_BUCKET_NAME=rlidnet-files
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./app:/app/app
+      - ./results:/app/results
+
+  # Celery Worker
+  worker:
+    build: .
+    command: celery -A app.tasks.training_task worker --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://rlidnet:password@db:5432/rlidnet
+      - REDIS_URL=redis://redis:6379/0
+      - S3_BUCKET_NAME=rlidnet-files
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./app:/app/app
+      - ./results:/app/results
+
+  # PostgreSQL 데이터베이스
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=rlidnet
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=rlidnet
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Redis
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
+
+
